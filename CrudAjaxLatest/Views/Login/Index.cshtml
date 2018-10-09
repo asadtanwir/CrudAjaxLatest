@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/employee.js"></script>
+<h2>Login</h2>
+
+
+    <div class="form-group">
+        <label for="userName">username</label>
+        <input type="text" class="form-control" id="userName" placeholder="username" />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" />
+    </div>
+      <span id="errormsg" style="color:red"></span> <br /> 
+    <button type="button" class="btn btn-primary" id="btnLogin" onclick="return Login();">Login</button>
